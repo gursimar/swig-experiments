@@ -10,6 +10,8 @@ Python - make clean && make build_python_module && python abc.py
 
 PHP - make clean && make build_php_module && php abc.php
 
+JAVA - make clean && make build_java_module && javac abc.java && java abc
+
 #Tutorials
 Swig - http://www.swig.org/Doc2.0/SWIGDocumentation.html
 
