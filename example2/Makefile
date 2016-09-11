@@ -32,6 +32,14 @@ build_php_module: build_php_interface_file
 	sudo cp $(OUT_LIB_FILE).so /usr/lib64/php/modules/
 	@echo -e "\n\nPHP DONE\n"
 	
+build_java_interface_file:
+	$(SWIG) -java $(C_INTERFACE_FILE).i
+
+build_java_module: build_java_interface_file
+	@echo -e "\nBuilding library of code\n"
+	$(CC) -fPIC -c $(C_SOURCE_FILE).c $(C_SOURCE_FILE)_wrap.c -I/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.75.x86_64/
+	$(LD) $(LINKER_ARGS) $(C_SOURCE_FILE).o $(C_SOURCE_FILE)_wrap.o -o lib$(OUT_LIB_FILE).so
+	@echo -e "\n\nJAVA DONE\n"
 
 #build_python_lib: build_python_interface_file
 #	$(PYTHON) setup.py build_ext --inplace
