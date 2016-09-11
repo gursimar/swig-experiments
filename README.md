@@ -2,8 +2,9 @@
 Write code in one language and it automatically generates code for other languages like python and php.
 
 #Makefile
-make build_python_interface_file
-make build_python_module
+make build_<lang>_interface_file - to generate interface files
+
+make build_<lang>_module - to generate c libs and glue code
 
 #Run commands
 Python - make clean && make build_python_module && python abc.py
