@@ -13,6 +13,8 @@ PHP - make clean && make build_php_module && php abc.php
 #Tutorials
 Swig - http://www.swig.org/Doc2.0/SWIGDocumentation.html
 
+Libraries - http://www.swig.org/Doc1.3/Library.html#Library_carrays
+
 Python - http://www.swig.org/Doc1.3/Python.html#Python_nn3
 
 Php - http://www.swig.org/Doc1.3/Php.html
