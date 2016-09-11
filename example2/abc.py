@@ -1,4 +1,4 @@
-import simar
+import example
 
-hello = simar.add(5,6)
+hello = example.add(5,6)
 print hello
